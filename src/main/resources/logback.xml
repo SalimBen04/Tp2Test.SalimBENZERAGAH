@@ -5,6 +5,9 @@
             <pattern>%d{HH:mm:ss.SSS} %-5level [%thread] %logger{36} - %msg%n</pattern>
         </encoder>
     </appender>
+    <configuration>
+        <logger name="org.apache.fontbox" level="WARN"/>
+    </configuration>
 
     <logger name="dev.langchain4j" level="INFO"/>
     <logger name="org.apache.fontbox" level="WARN"/>
