@@ -52,12 +52,13 @@
             <version>1.22.0-beta32</version>
         </dependency>
 
-        <!-- Modèle d'embeddings local BGE Small (À mettre en commentaire au Test 5) -->
+        <!-- Modèle d'embeddings local BGE Small (À mettre en commentaire au Test 5)
         <dependency>
             <groupId>dev.langchain4j</groupId>
             <artifactId>langchain4j-embeddings-bge-small-en-v15</artifactId>
             <version>1.0.0-beta1</version>
         </dependency>
+        -->
 
         <!-- Logging avec Logback -->
         <dependency>
@@ -65,6 +66,7 @@
             <artifactId>logback-classic</artifactId>
             <version>1.5.6</version>
         </dependency>
+
     </dependencies>
 
     <build>
