@@ -12,9 +12,10 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.target>8</maven.compiler.target>
-        <maven.compiler.source>8</maven.compiler.source>
-        <junit.version>6.1.3</junit.version>
+        <maven.compiler.target>21</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <junit.version>5.10.0</junit.version>
+        <langchain4j.version>1.22.0</langchain4j.version>
     </properties>
 
     <dependencies>
@@ -36,20 +37,33 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- LangChain4j Core -->
         <dependency>
             <groupId>dev.langchain4j</groupId>
             <artifactId>langchain4j</artifactId>
-            <version>1.22.0</version>
+            <version>${langchain4j.version}</version>
         </dependency>
+
+        <!-- LangChain4j Google GenAI -->
         <dependency>
             <groupId>dev.langchain4j</groupId>
             <artifactId>langchain4j-google-genai</artifactId>
             <version>1.22.0-beta32</version>
         </dependency>
+
+        <!-- Modèle d'embeddings local BGE Small (À mettre en commentaire au Test 5) -->
+        <dependency>
+            <groupId>dev.langchain4j</groupId>
+            <artifactId>langchain4j-embeddings-bge-small-en-v15</artifactId>
+            <version>1.0.0-beta1</version>
+        </dependency>
+
+        <!-- Logging avec Logback -->
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>1.6.5</version>
+            <version>1.5.6</version>
         </dependency>
     </dependencies>
 
